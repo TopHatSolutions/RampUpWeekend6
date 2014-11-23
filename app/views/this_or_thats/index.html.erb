@@ -1,0 +1,47 @@
+<h1>Listing this_or_thats</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Image1</th>
+      <th>Image2</th>
+      <th>Description</th>
+      <th>Comment</th>
+      <th>Is private</th>
+      <th>User</th>
+      <th>Pants brand</th>
+      <th>Shirt brand</th>
+      <th>Shoes brand</th>
+      <th>Hat brand</th>
+      <th>Jacket brand</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @this_or_thats.each do |this_or_that| %>
+      <tr>
+        <td><%= this_or_that.image1 %></td>
+        <td><%= this_or_that.image2 %></td>
+        <td><%= this_or_that.description %></td>
+        <td><%= this_or_that.comment %></td>
+        <td><%= this_or_that.is_private %></td>
+        <td><%= this_or_that.user_id %></td>
+        <td><%= this_or_that.pants_brand %></td>
+        <td><%= this_or_that.shirt_brand %></td>
+        <td><%= this_or_that.shoes_brand %></td>
+        <td><%= this_or_that.hat_brand %></td>
+        <td><%= this_or_that.jacket_brand %></td>
+        <td><%= link_to 'Show', this_or_that %></td>
+        <td><%= link_to 'Edit', edit_this_or_that_path(this_or_that) %></td>
+        <td><%= link_to 'Destroy', this_or_that, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New This or that', new_this_or_that_path %>

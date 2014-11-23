@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  image1: MyString
+  image2: MyString
+  description: MyText
+  comment: MyString
+  is_private: false
+  user_id: 1
+  pants_brand: MyString
+  shirt_brand: MyString
+  shoes_brand: MyString
+  hat_brand: MyString
+  jacket_brand: MyString
+
+two:
+  image1: MyString
+  image2: MyString
+  description: MyText
+  comment: MyString
+  is_private: false
+  user_id: 1
+  pants_brand: MyString
+  shirt_brand: MyString
+  shoes_brand: MyString
+  hat_brand: MyString
+  jacket_brand: MyString

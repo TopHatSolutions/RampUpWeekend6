@@ -1,4 +1,14 @@
 Myapp::Application.routes.draw do
+  resources :followings
+
+  resources :responses
+
+  resources :contact_lists
+
+  resources :this_or_thats
+
+  resources :users
+
   get "home/index"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

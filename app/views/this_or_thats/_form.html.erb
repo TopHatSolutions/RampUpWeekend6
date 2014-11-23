@@ -1,0 +1,61 @@
+<%= form_for(@this_or_that) do |f| %>
+  <% if @this_or_that.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@this_or_that.errors.count, "error") %> prohibited this this_or_that from being saved:</h2>
+
+      <ul>
+      <% @this_or_that.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :image1 %><br>
+    <%= f.text_field :image1 %>
+  </div>
+  <div class="field">
+    <%= f.label :image2 %><br>
+    <%= f.text_field :image2 %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br>
+    <%= f.text_area :description %>
+  </div>
+  <div class="field">
+    <%= f.label :comment %><br>
+    <%= f.text_field :comment %>
+  </div>
+  <div class="field">
+    <%= f.label :is_private %><br>
+    <%= f.check_box :is_private %>
+  </div>
+  <div class="field">
+    <%= f.label :user_id %><br>
+    <%= f.number_field :user_id %>
+  </div>
+  <div class="field">
+    <%= f.label :pants_brand %><br>
+    <%= f.text_field :pants_brand %>
+  </div>
+  <div class="field">
+    <%= f.label :shirt_brand %><br>
+    <%= f.text_field :shirt_brand %>
+  </div>
+  <div class="field">
+    <%= f.label :shoes_brand %><br>
+    <%= f.text_field :shoes_brand %>
+  </div>
+  <div class="field">
+    <%= f.label :hat_brand %><br>
+    <%= f.text_field :hat_brand %>
+  </div>
+  <div class="field">
+    <%= f.label :jacket_brand %><br>
+    <%= f.text_field :jacket_brand %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
