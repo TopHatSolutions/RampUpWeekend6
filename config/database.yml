@@ -22,8 +22,8 @@ production:
   adapter: mysql
   encoding: utf8
   database: thisrthat_app
-  username: thisrthat
-  password: ruw6
+  username: rails
+  password: pG7kyGuDp3
   host: localhost
   port: 3306
   pool: 10
